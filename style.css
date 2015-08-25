@@ -1,0 +1,176 @@
+/*
+Theme Name: rc_theme
+Theme URI: rcconsulting.eng.br/
+Author: Marcus Vinicius @marquinhusgonc;
+Description: Tema exclusivo RC Consulting.
+*/
+/*MENU*/
+header {
+	width: 100%;
+	margin-bottom: 15px;
+}
+header img {
+	height: 50px;
+	margin-top: 10px;
+}
+nav {
+	float: right;
+}
+nav li {
+	display: inline-block;
+}
+nav li a, nav li a:visited {
+	color: #58595b;
+}
+nav li.menu-item-15 a {
+	border-bottom: 10px solid #e9eced;
+	padding-bottom: 10px;
+}
+nav li.menu-item-20 a {
+	border-bottom: 10px solid #d4d9dc;
+	padding-bottom: 10px;
+}
+nav li.menu-item-19 a {
+	border-bottom: 10px solid #bec5cb;
+	padding-bottom: 10px;
+}
+nav li.menu-item-18 a {
+	border-bottom: 10px solid #a9b3ba;
+	padding-bottom: 10px;
+}
+nav li.menu-item-17 a {
+	border-bottom: 10px solid #949fa8;
+	padding-bottom: 10px;
+}
+nav li.menu-item-16 a {
+	border-bottom: 10px solid #7d8892;
+	padding-bottom: 10px;
+}
+nav li.menu-itens a:hover, nav li.menu-itens a:active {
+	color: #721326;
+	text-decoration: none;
+	border-bottom: 10px solid #721326;
+	padding-bottom: 10px;
+}
+
+.sidebar {
+	transition: all .15s ease;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: -240px;
+	width: 220px;
+	padding: 100px 30px;
+	background: #ED6D04;
+	z-index: 90;
+	display: none;
+	box-shadow: 0px 2px 12px rgba(0,0,0,0.75);
+}
+.toggle {
+	transition: all .15s ease;
+	font-size: 36px;
+	color: black;
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	z-index: 99;
+	display: none;
+}
+#sidebartoggler {
+	display: none;
+}
+#sidebartoggler:checked + .toggle {
+	right: 190px;
+	color: black;
+}
+#sidebartoggler:checked ~ .sidebar {
+	right: 0px;
+}
+.menu_principal ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 4px;
+}
+.menu_principal {
+	display: -webkit-box;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	margin-top: 10px;
+}
+.menu-menu-container {
+	margin-top: 12px;
+}
+/*INDEX*/
+.banner_home{
+	margin-bottom: 15px;
+}
+section {
+	margin-bottom: 15px;
+}
+section h2 {
+	text-transform: uppercase;
+}
+section h4 {
+	text-transform: uppercase;
+}
+.wrap {
+	height: auto;
+}
+.first_column, .second_column {
+	height: 400px;
+}
+.children_column {
+	height: 200px;
+	width: 100%;
+}
+.thumbnail {
+	height: 350px;
+	border: 0;
+	border-radius: 0;
+}
+.all {
+	padding: 0;
+}
+.one {
+	background-color: #8d3f4f;
+}
+.two {
+	background-color: #a9b3ba;
+}
+.three {
+	background-color: #7f8c97;
+}
+.four {
+	background-color: #426376;
+}
+.caption img {
+    vertical-align: top;
+    margin-top: 20px;
+}
+.caption h3 {
+	display: inline-block;
+	margin-top: 0px;
+    margin-left: 15px;
+}
+.one h3, .four h3 {
+	margin-top: 15px;
+}
+.one p, .four p {
+	margin-top: 20px;
+}
+.two p, .three p {
+	margin-top: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

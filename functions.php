@@ -18,12 +18,12 @@ register_nav_menus(array(
 
 //Change excerpt text
 function custom_excerpt_length( $length ) {
-    return 40;
+    return 30;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function new_excerpt_more( $more ) {
-    return '<a class="leia-mais btn btn-primary" href="'. get_permalink( get_the_ID() ) . '">' . __('LEIA', ' ') . '</a>';
+    return '...</p><a class="btn btn-default btn-leia" href="'. get_permalink( get_the_ID() ) . '">' . __('LEIA', ' ') . '</a>';
     }
     add_filter( 'excerpt_more', 'new_excerpt_more' );
 

@@ -1,52 +1,57 @@
 <?php get_header(); ?>
 
-<div class="banner_home">
-	<img src="<?php bloginfo('stylesheet_directory');?>/img/banner_home.jpg" alt="">
+<div class="banner banner_home">
+	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_home.jpg" alt="">
 </div>
 
 <section class="container">
 	<div class="wrap col-md-12"><!-- style="background-color:blue; height:400px;" --> 
-		
 		<div class="first_column col-md-6"><!-- style="background-color:red; height:400px" -->
-			<h2>notícias</h2>
-			<?php query_posts('category_name=noticias&showposts=1'); ?>
-			<?php if (have_posts()) : ?>
-			<?php while (have_posts()) : the_post(); ?>
-
-				<h4><?php the_title(); ?></h4>
-				<div style="width: 100%; height: 200px; background: url(<?php echo catch_that_image() ?>) no-repeat; background-size: 100%"></div>
-				<?php the_excerpt(); ?>
-
-			<?php endwhile; ?>
-			<?php else : ?>
-			<?php endif; ?>
-		</div><!-- primeira coluna -->
-		<div class="second_column col-md-6"><!-- style="background-color:green; height:400px;" -->
-			<div class="children_column col-md-6"><!-- style="background-color:yellow; height:200px; width: 500px" -->
-				<h2>cursos & treinamentos</h2>
-				<?php query_posts('category_name=cursosetreinamentos&showposts=1'); ?>
+			<div class="col-md-12">
+				<h2>notícias</h2>
+				<?php query_posts('category_name=noticias&showposts=1'); ?>
 				<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post(); ?>
 
 					<h4><?php the_title(); ?></h4>
-					<?php the_excerpt(); ?>
+					<div style="width: 100%; height: 230px; background: url(<?php echo catch_that_image() ?>) no-repeat; background-size: 100%"></div>
+					<div class="child"><?php the_excerpt(); ?></div>
 
 				<?php endwhile; ?>
 				<?php else : ?>
 				<?php endif; ?>
 			</div>
+		</div><!-- primeira coluna -->
+		<div class="second_column col-md-6"><!-- style="background-color:green; height:400px;" -->
+			<div class="children_column col-md-6"><!-- style="background-color:yellow; height:200px; width: 500px" -->
+				<h2>cursos & treinamentos</h2>
+				<div style="background-color: #d4d9dc; padding: 0 15px;">
+					<?php query_posts('category_name=cursosetreinamentos&showposts=1'); ?>
+					<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
+
+						<h4><?php the_title(); ?></h4>
+						<?php the_excerpt(); ?>
+
+					<?php endwhile; ?>
+					<?php else : ?>
+					<?php endif; ?>
+				</div>	
+			</div>
 			<div class="children_column col-md-6"><!-- style="background-color:pink; height:200px; width: 500px" --> 
 				<h2>atuação</h2>
-				<?php query_posts('category_name=atuacao&showposts=1'); ?>
-				<?php if (have_posts()) : ?>
-				<?php while (have_posts()) : the_post(); ?>
+				<div style="background-color: #e6d4d8; padding: 0 15px;">
+					<?php query_posts('category_name=atuacao&showposts=1'); ?>
+					<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
 
-					<h4><?php the_title(); ?></h4>
-					<?php the_excerpt(); ?>
+						<h4><?php the_title(); ?></h4>
+						<?php the_excerpt(); ?>
 
-				<?php endwhile; ?>
-				<?php else : ?>
-				<?php endif; ?>
+					<?php endwhile; ?>
+					<?php else : ?>
+					<?php endif; ?>
+				</div>
 			</div>
 		</div><!-- segunda coluna -->
 	</div><!-- wrap -->

@@ -4,7 +4,7 @@
 	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_aempresa.jpg" alt="">
 </div>
 <div class="container aempresa">
-	<div class="aempresa-text">
+	<div class="aempresa-box">
 		<p>A RC Consulting surgiu em 2002 para atender uma contingência de mercado. Hoje, empresas necessitam contar com profissionais capacitados para a realização de trabalhos específicos, porém, por tempo definido, representando um serviço de alta qualidade a um custo reduzido.</p>
 		<h5>missão:</h5>
 		<p>Nossa missão é Contribuir para o desenvolvimento dos clientes, através da prestação de serviços que busquem as tecnologias mais eficazes e recentes, porém, que estejam adequadas às necessidades existentes.</p>

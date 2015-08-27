@@ -218,13 +218,70 @@ section h4 {
 .aempresa {
 	background-color: #d4d9dc;
 }
-.aempresa-text {
+.aempresa-box {
 	padding: 40px 100px;
 }
-.aempresa-text h5 {
+.aempresa-box h5 {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+
+
+
+
+
+
+/*TREINAMENTO*/
+.treinamento-box {
+	padding: 40px 100px;
+}
+.titulo-treinamento {
+	display:flex;
+	align-items:center;
+}
+.titulo-treinamento img {
+	margin-right: 80px;
+}
+.treinamento-text p {
+	width: 22%;
+    float: left;
+    margin-top: 80px;
+    margin-left: 200px;
+    font-size: 16px;
+}
+.treinamento-text img {
+	margin-top: 50px;
+    margin-left: 70px;
+}
+.form-treinamento {
+    margin: 90px 0;
+    position: relative;
+}
+.form-treinamento input {
+	display: inline;
+	width: 70%
+}
+.form-treinamento-btn {
+	position: absolute;
+	right: 78px;
+}
+.btn-treinamento {
+	margin: 0;
+    background-color: #721326;
+    border-color: transparent;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 /*CONTATO*/
 .contato {
 	background-color: #d4d9dc;
@@ -259,18 +316,6 @@ form {
 	width: 92,5%;
 	height: 500px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER*/
 footer {
 	height: 350px;
@@ -294,20 +339,9 @@ footer p {
 	font-size: 30px;
 	color: #fff;
 }
+.fa-footer:hover {
+	color: #000;
+}
 .endereco {
 	margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

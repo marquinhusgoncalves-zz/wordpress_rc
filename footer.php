@@ -23,7 +23,13 @@
 	</div>
 </footer>
 
+<div class = "scroll-to-top"><i class = "fa fa-chevron-up"></i></div><!-- .scroll-to-top -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('stylesheet_directory');?>/js/scrolltop.js"></script>
+<!-- Não abrir link no menu -->
+<script type="text/javascript">jQuery(function($) {$("li#menu-item-44").children("a").attr('href', "#");});</script>
 
 <?php wp_footer(); ?>
 

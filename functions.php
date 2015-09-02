@@ -13,7 +13,6 @@ add_action( 'after_setup_theme', 'wpt_setup' );
 register_nav_menus(array(
     'primary' => __( 'Primary Menu' ),
     'mobile' => __( 'Mobile Menu' ),
-    'footer' => __( 'Footer Menu' ),
 ));
 
 //Change excerpt text

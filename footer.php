@@ -1,7 +1,7 @@
 <footer>
 	<div class="container">
 		<div class="col-sm-12 col-md-4">		
-			<img src="<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt="logo rc consulting">
+			<img class="logo-footer" src="<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt="logo rc consulting">
 			<p>Soluções em Engenharia</p>
 			<p>Segurança do Trabalho</p>
 			<p>Proteção Contra Incêndios</p>
@@ -27,7 +27,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory');?>/js/scrolltop.js"></script>
+<script src="<?php bloginfo('stylesheet_directory');?>/js/rc_theme.js"></script>
 <!-- Não abrir link no menu -->
 <script type="text/javascript">jQuery(function($) {$("li#menu-item-44").children("a").attr('href', "#");});</script>
 

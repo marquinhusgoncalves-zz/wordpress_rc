@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="banner">
-	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_treinamento.jpg" alt="Banner treinamento">
+<div class="banner banner-treinamentos">
+	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_treinamento.jpg" alt="Banner RC Consulting">
 </div>
 <div class="container treinamento">
 	<div class="treinamento-box">

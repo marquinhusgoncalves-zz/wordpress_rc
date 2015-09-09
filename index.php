@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 
-<div class="banner banner_home">
-	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_home.jpg" alt="">
+<div class="banner banner-home">
+	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_home.jpg" alt="Banner RC Consulting">
+	<div class="container">
+		<p class="text-banner-home">Compromisso em realizar serviços de engenharia, assessoria, consultoria e treinamento, que agreguem valor às atividades de seus clientes.</p>
+	</div>
 </div>
 
-<section class="container">
+<section class="container last-info">
 	<div class="wrap col-md-12">
 		<div class="first_column col-md-6">
 			<div class="col-md-12">
@@ -14,7 +17,7 @@
 				<?php while (have_posts()) : the_post(); ?>
 
 					<h4><?php the_title(); ?></h4>
-					<div style="width: 100%; height: 230px; background: url(<?php echo catch_that_image() ?>) no-repeat; background-size: 100%"></div>
+					<div class="img-first-column" style="background: url(<?php echo catch_that_image() ?>) no-repeat; background-size: 100%"></div>
 					<div class="child"><?php the_excerpt(); ?></div>
 
 				<?php endwhile; ?>
@@ -25,7 +28,7 @@
 		<div class="second_column col-md-6">
 			<div class="children_column col-md-6">
 				<h2>cursos & treinamentos</h2>
-				<div style="background-color: #d4d9dc; padding: 0 15px; height: auto; min-height: 180px; position: relative;">
+				<div class="box-second-column" style="background-color: #d4d9dc">
 					<?php query_posts('category_name=cursosetreinamentos&showposts=1'); ?>
 					<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
@@ -40,7 +43,7 @@
 			</div>
 			<div class="children_column col-md-6">
 				<h2>atuação</h2>
-				<div style="background-color: #e6d4d8; padding: 0 15px; height: auto; min-height: 180px; position: relative;">
+				<div class="box-second-column" style="background-color: #e6d4d8">
 					<?php query_posts('category_name=atuacao&showposts=1'); ?>
 					<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>

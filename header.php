@@ -20,8 +20,8 @@
 			<div class="container">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt=""></a>
 				<input type="checkbox" id="sidebartoggler" name="" value="">	
-				<label class="toggle visible-xs-inline-block" for="sidebartoggler"><i class="fa fa-bars"></i></label>
-				<nav class="menu_principal sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>
-				<nav class="menu_principal hidden-xs" ><?php wp_nav_menu(''); ?></nav>
+				<label class="toggle visible-xs-inline-block visible-sm-inline-block" for="sidebartoggler"><i class="fa fa-bars"></i></label>
+				<nav class="menu_principal sidebar visible-xs-inline-block visible-sm-inline-block"><?php wp_nav_menu(''); ?></nav>
+				<nav class="menu_principal hidden-xs hidden-sm" ><?php wp_nav_menu(''); ?></nav>
 			</div>
 		</header>

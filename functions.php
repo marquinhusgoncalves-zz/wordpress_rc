@@ -34,7 +34,7 @@ add_action( 'after_setup_theme', 'wpt_setup' );
         } endif;
 
 //Catch the second image
-  function catch_that_image() {
+function catch_that_image() {
     global $post, $posts;
     $first_img = '';
     ob_start();
@@ -47,4 +47,57 @@ add_action( 'after_setup_theme', 'wpt_setup' );
     }
     return $first_img;
   }
+
+// Texto admin rodape
+function remove_footer_admin () {
+    echo "Feito com o <3 por Mundo S.A";
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
+
+//Pagination
+function pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      echo "<span class='page-numbers page-num'>Página " . $paged . " de " . $numpages . "</span> ";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+
+}
+
 ?>

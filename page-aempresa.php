@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-<div class="banner banner_empresa">
-	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_aempresa.jpg" alt="">
+<div class="banner banner-aempresa">
+	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_aempresa.jpg" alt="Banner RC Consulting">
+	<div class="container">
+		<p class="text-banner-aempresa">Serviços de Alta Qualidade com Custos Reduzidos.</p>
+	</div>
 </div>
 <div class="container aempresa">
 	<div class="aempresa-box">

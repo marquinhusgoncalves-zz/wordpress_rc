@@ -4,6 +4,14 @@ Theme URI: rcconsulting.eng.br/
 Author: Marcus Vinicius @marquinhusgonc;
 Description: Tema exclusivo RC Consulting.
 */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+h2 {
+	text-transform: uppercase;
+}
 /*MENU*/
 header {
 	height: 100px;
@@ -21,13 +29,16 @@ nav li {
 }
 nav li a, nav li a:visited {
 	color: #58595b;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	-o-transition: 0.5s ease-in;
+	transition: 0.5s ease-in;
 }
 nav.sidebar li a, nav.sidebar li a:visited {
 	color: #D4D9DC;
 }
-
 nav li.menu-item-15 a {
-	border-bottom: 10px solid #e9eced;
+	border-bottom: 8px solid #e9eced;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-15 a {
@@ -35,7 +46,7 @@ nav.sidebar li.menu-item-15 a {
 	padding: 0;
 }
 nav li.menu-item-20 a {
-	border-bottom: 10px solid #d4d9dc;
+	border-bottom: 8px solid #d4d9dc;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-20 a {
@@ -43,7 +54,7 @@ nav.sidebar li.menu-item-20 a {
 	padding: 0;
 }
 nav li.menu-item-19 a {
-	border-bottom: 10px solid #bec5cb;
+	border-bottom: 8px solid #bec5cb;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-19 a {
@@ -51,7 +62,7 @@ nav.sidebar li.menu-item-19 a {
 	padding: 0;
 }
 nav li.menu-item-18 a {
-	border-bottom: 10px solid #a9b3ba;
+	border-bottom: 8px solid #a9b3ba;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-18 a {
@@ -59,27 +70,25 @@ nav.sidebar li.menu-item-18 a {
 	padding: 0;
 }
 nav li.menu-item-17 a {
-	border-bottom: 10px solid #949fa8;
+	border-bottom: 8px solid #949fa8;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-17 a {
 	border-bottom: 0;
 	padding: 0;
-	margin-right: 65px;
+	margin-right: 75px;
 }
 nav li.menu-item-16 a {
-	border-bottom: 10px solid #7d8892;
+	border-bottom: 8px solid #7d8892;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-16 a {
 	border-bottom: 0;
 	padding: 0;
+	margin-right: 130px;
 }
-
-
-
 nav li.menu-item-44 a {
-	border-bottom: 10px solid #58595B;
+	border-bottom: 8px solid #58595B;
 	padding: 0 10px 27px 10px;
 }
 nav.sidebar li.menu-item-44 a {
@@ -88,42 +97,42 @@ nav.sidebar li.menu-item-44 a {
 }
 .sub-menu {
 	position: absolute;
-    display:none; 
+    display: none; 
 }
 nav li.menu-item-44 {
 	position: relative;
 }
 nav li.menu-item-44:hover .sub-menu {
 	display:block;
-	margin-top: 35px;
-    background-color: #58595B;	
+	margin-top: 33px;
+    background-color: #58595B;
+    z-index: 99;
 }
 nav.sidebar li.menu-item-44:hover .sub-menu {
-	display:block;
-	/*top: 0;
-    left: 100%;*/
+	display: block;
+	margin-top: -4px;
+	background-color: transparent;
 }
 nav li.menu-item-44 .sub-menu a {
 	border-bottom: 0;
 	color: #fff;
 	padding: 0 ;
 }
-nav li.menu-item-44 .sub-menu a:hover, nav li.menu-item-44 .sub-menu a:active {
+nav li.menu-item-44 .sub-menu a:hover, 
+nav li.menu-item-44 .sub-menu a:active {
 	border-bottom: 0;
 	padding: 0 ;
 }
-
-
-
-
-
-nav li.menu-itens a:hover, nav li.menu-itens a:active {
+nav li.menu-itens a:hover, 
+nav li.menu-itens a:active,
+nav li.current-menu-item a {
 	color: #721326;
 	text-decoration: none;
 	border-bottom: 10px solid #721326;
 	padding: 0 10px 27px 10px;
 }
-nav.sidebar li.menu-itens a:hover, nav.sidebar li.menu-itens a:active {
+nav.sidebar li.menu-itens a:hover, 
+nav.sidebar li.menu-itens a:active {
 	border-bottom: 0;
 	padding: 0;
 }
@@ -180,11 +189,19 @@ nav.sidebar li.menu-itens a:hover, nav.sidebar li.menu-itens a:active {
 	margin-top: 35px;
 }
 /*INDEX*/
-.banner_home {
+.banner-home {
 	margin-bottom: 50px;
+	position: relative;
 }
-.banner img {
+.text-banner-home {
+	width: 340px;
+    position: absolute;
+    top: 100px;
+    font-size: 1.4em;
+}
+.banner-home img {
 	width: 100%;
+	min-height: 180px;
 }
 section {
 	margin-bottom: 50px;
@@ -204,6 +221,16 @@ section h4 {
 .first_column, .second_column {
 	height: 520px;
 }
+.img-first-column {
+	width: 100%; 
+	height: 230px; 
+}
+.box-second-column {
+	padding: 0 15px; 
+	height: auto; 
+	min-height: 180px; 
+	position: relative;
+}
 .child p:nth-child(1) {
 	margin-top: 15px;	
 }
@@ -216,7 +243,7 @@ section h4 {
 }
 .thumbnail {
 	position: relative;
-	height: 340px;
+	height: 360px;
 	border: 0;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -274,7 +301,7 @@ section h4 {
 .caption h3 {
 	display: inline-block;
 	margin-top: 0px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 .one h3, .four h3 {
 	margin-top: 15px;
@@ -303,9 +330,23 @@ section h4 {
 }
 .first_column .child p a {
 	right: 20px;
-	bottom: -64px;
+	bottom: -57px;
 }
 /*AEMPRESA*/
+.banner-aempresa {
+	position: relative;
+}
+.text-banner-aempresa {
+	width: 220px;
+    position: absolute;
+    top: 140px;
+    font-size: 1.4em;
+    color: #fff;
+}
+.banner-aempresa img {
+	width: 100%;
+	min-height: 180px;
+}
 .aempresa {
 	background-color: #d4d9dc;
 }
@@ -317,8 +358,16 @@ section h4 {
 	font-weight: bold;
 }
 /*SERVIÇOS*/
+.banner-servicos img {
+	width: 100%;
+	min-height: 180px;
+}
 .servicos-box {
 	padding: 40px 100px;
+}
+.servicos-box h5 {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .panel-group {
     margin-top: 50px;
@@ -350,6 +399,10 @@ section h4 {
     border-color: transparent;
 }
 /*TREINAMENTOS*/
+.banner-treinamentos img {
+	width: 100%;
+	min-height: 180px;
+}
 .treinamento-box {
 	padding: 40px 100px;
 }
@@ -390,9 +443,35 @@ section h4 {
     color: #fff;
 }
 /*CLIENTES*/
+.banner-clientes img {
+	width: 100%;
+	min-height: 180px;
+}
 /*CONTATO*/
+.banner-contato > img:nth-child(1) {
+	width: 100%;
+	min-height: 180px;
+}
+.banner-contato {
+	position: relative;
+}
+.box-banner-contato {
+	width: 380px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+}
+.text-banner-contato {
+	color: #fff;
+	font-size: 1.7em;
+}
+.icons-banner-contato img {
+	padding: 15px;
+}
 .contato {
 	background-color: #d4d9dc;
+	position: relative;
+	min-height: 360px;
 }
 form {
 	margin-top: 40px;
@@ -404,7 +483,9 @@ form {
 	color: #fff;
     background-color: #721326;
     border-color: transparent;
-    margin-left: 445px;
+    position: absolute;
+    right: 11px;
+    bottom: -35px;
 }
 .alert {
 	margin-top: 20px;
@@ -475,7 +556,7 @@ footer p {
 	z-index: 99;
 	font-size: 16px;
 	text-align: center;
-	padding-top: 8px;
+	padding-top: 11px;
 	padding-right: 2px;
 	-webkit-transition: background-color 0.3s linear;
 	-moz-transition: background-color 0.3s linear;
@@ -486,31 +567,79 @@ footer p {
 	background: black;
 	opacity: .8;
 }
+/*CATEGORIAS*/
+.list-post-category {
+	min-height: 180px;
+}
+/*PAGINATION*/
+.custom-pagination span,
+.custom-pagination a {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.custom-pagination a {
+  background-color: #ebebeb;
+  color: #294052;
+}
+.custom-pagination a:hover {
+  background-color: #294052;
+  color: #fff;
+}
+.custom-pagination span.page-num {
+  margin-right: 10px;
+  padding: 0;
+}
+.custom-pagination span.dots {
+  padding: 0;
+  color: gainsboro;
+}
+.custom-pagination span.current {
+  background-color: #294052;
+  color: #fff;
+}
 /*MEDIAQUERIES*/
 @media screen and (max-width: 1199px) {
-	.thumbnail {
-    	height: 380px;
+	/*INDEX*/
+	.text-banner-home {
+    	top: 50px;
+    	font-size: 1.1em;
     }
+    .thumbnail {
+    	height: 400px;
+    }
+    .caption h3 {
+    	font-size: 21px;
+    }
+    /*EMPRESA*/
+    .text-banner-aempresa {
+    	top: 50px;
+    	font-size: 1.2em;
+	}
+	/*TREINAMENTO*/
     .treinamento-text img {
     	margin-top: 90px;
     }
     .form-treinamento-btn {
     	right: 17px;
 	}
+	/*CONTATO*/
+	.box-banner-contato {
+		top: 10px;
+	}
+	.icons-banner-contato img {
+		width: 20%;
+		padding: 10px;
+	}
+	.first_column .child p a {
+    	bottom: -41px;
+	}
 }
 @media screen and (max-width: 991px) {
+	/*INDEX*/
 	.thumbnail {
     	height: 340px;
 	}
-	footer {
-		text-align: center;
-	}
-	footer .container {
-		padding: 50px;
-	}
-	.menu_footer {
-		display: none;
-	}
+	/*TREINAMENTO*/
 	.treinamento-text p {
     	width: 42%;
     	margin-left: 20px;
@@ -524,11 +653,24 @@ footer p {
 	.form-treinamento-btn {
     	right: 0;
 	}
+	/*FOOTER*/
+	footer {
+		text-align: center;
+	}
+	footer .container {
+		padding: 50px;
+	}
+	.menu_footer {
+		display: none;
+	}
 }
 @media screen and (max-width: 767px){
-	.thumbnail {
-    	height: 290px;
+	/*INDEX*/
+	 .last-info .col-md-6, .col-md-12 {
+		padding-right: 0;
+		padding-left: 0;
 	}
+	/*TREINAMENTO*/
 	.treinamento-box {
     	padding: 40px 0px;
 	}
@@ -540,4 +682,46 @@ footer p {
     	width: 92%;
     }
 }
-	
+@media screen and (max-width: 420px) {
+	/*INDEX*/
+    .text-banner-home {
+    	width: 200px;
+    	top: 30px;
+    	font-size: 0.9em;
+    }
+    .first_column {
+    	height: 450px;
+	}
+    .img-first-column {
+    	height: 150px;
+	}
+	.second_column {
+    	height: 680px;
+    }
+    .children_column {
+    	height: 355px;
+    }
+    .box-second-column {
+		min-height: 260px; 
+	}
+	/*EMPRESA*/
+	.aempresa-box {
+    	padding: 15px 15px;
+	}
+	/*SERVICOS*/
+	.servicos-box {
+    	padding: 15px 15px;
+	}
+	.panel-title i {
+    	top: 1px;
+    	right: 0px;
+	}
+	/*CONTATO*/
+	.box-banner-contato {
+    	width: 200px;
+    }
+    /*FOOTER*/
+    .logo-footer {
+    	width: 100%;
+    }
+}

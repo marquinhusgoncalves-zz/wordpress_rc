@@ -1,7 +1,17 @@
 <?php get_header(); ?>
 
-<div class="banner banner_contato">
-	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_contato.jpg" alt="">
+<div class="banner banner-contato">
+	<img src="<?php bloginfo('stylesheet_directory');?>/img/banners/banner_contato.jpg" alt="Banner RC Consulting">
+	<div class="container">
+		<div class="box-banner-contato">
+			<p class="text-banner-contato">Entre em contato</p>
+			<div class="icons-banner-contato">
+				<img src="<?php bloginfo('stylesheet_directory');?>/img/icon_location.png" alt="">
+				<img src="<?php bloginfo('stylesheet_directory');?>/img/icon_mail.png" alt="">
+				<img src="<?php bloginfo('stylesheet_directory');?>/img/icon_cel.png" alt="">
+			</div>
+		</div>
+	</div>
 </div>
 <?php
 

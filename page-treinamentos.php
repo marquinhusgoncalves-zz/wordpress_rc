@@ -12,17 +12,28 @@
 		<div class="treinamento-text">
 			<p>Acesse e conheça todos os nossos cursos on-line exclusivos ministrados em plataforma mundialmente reconhecida em mais de 200 países.<br>
 				Clique no ícone e acesse <i class="fa fa-hand-o-right"></i></p>
-				<a href="http://www.rcconsulting.eng.br/moodle/"><img src="<?php bloginfo('stylesheet_directory');?>/img/iconmoodle.png" alt="Ícone Moodle"></a>
+				<a href="http://www.rcconsulting.eng.br/moodle/" target="_blank"><img src="<?php bloginfo('stylesheet_directory');?>/img/iconmoodle.png" alt="Ícone Moodle"></a>
 		</div>
-		<form class="form-treinamento">
+		<form class="form-treinamento" method="post" action="/sites/rc/treinamento.php">
+		<fieldset>
+		<legend>Baixe a apostila do seu curso:</legend>
 			<div class="form-group">
-				<label for="">Baixe a apostila do seu curso:</label>
-				<input type="text" class="form-control" placeholder="Text input">
+				<label for="dia">Dia</label>
+				<input type="text" name="dia" id="dia" size="3" maxlength="2" tabindex="1">
+				<label for="mes">Mês</label>
+				<input type="text" name="mes" id="mes" size="3" maxlength="2" tabindex="2">
+				<label for="ano">Ano</label>
+				<input type="text" name="ano" id="ano" size="5" maxlength="4" tabindex="3">
+			</div>
+			<div class="form-group">
+				<label for="code">Código</label>
+				<input type="text" name="code" id="code" size="15" tabindex="4">
 			</div>
 			<div class="form-treinamento-btn">
-				<button type="clear" class="btn btn-default btn-treinamento"><i class="fa fa-trash-o"></i> Limpar</button>
+				<button type="reset" class="btn btn-default btn-treinamento"><i class="fa fa-trash-o"></i> Limpar</button>
 				<button type="submit" class="btn btn-default btn-treinamento"><i class="fa fa-download"></i> Baixar Apostila</button>
 			</div>
+			</fieldset>
 		</form>
 	</div>
 </div>

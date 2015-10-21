@@ -1,11 +1,8 @@
 <footer>
+	<div class="footer-barra"></div>
 	<div class="container">
 		<div class="col-sm-12 col-md-4">		
-			<img class="logo-footer" src="<?php bloginfo('stylesheet_directory');?>/img/logo.png" alt="logo rc consulting">
-			<p>Soluções em Engenharia</p>
-			<p>Segurança do Trabalho</p>
-			<p>Proteção Contra Incêndios</p>
-			<p>&copy; <?php echo date('Y'); ?> | <?php bloginfo('name'); ?></p>
+			<img class="logo-footer" src="<?php bloginfo('stylesheet_directory');?>/img/logo-rodape.png" alt="Logo RC Consulting">
 		</div>
 		<div class="col-sm-12 col-md-4">
 			<div class="menu_footer"><?php wp_nav_menu(''); ?></div>
@@ -18,7 +15,7 @@
 			<p class="endereco">Av. Imperatriz Leopoldina, 454 - Sala 33</p>
 			<p>CEP 09770-272 - B. Nova Petrópolis - S.B.C</p>
 			<p>Fone (11) 4330 4442 | 3423 1361</p>
-			<a style="color: #fff" href="contato@rcconsulting.eng.br">contato@rcconsulting.eng.br</a>
+			<a class="footer-link" href="contato@rcconsulting.eng.br">contato@rcconsulting.eng.br</a>
 		</div>
 	</div>
 </footer>

@@ -75,7 +75,6 @@ get_header(); ?>
 </div>
 <div class="container" id="map-canvas"></div>
 
-
 <?php get_footer(); ?>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 

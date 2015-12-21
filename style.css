@@ -37,24 +37,16 @@ nav li a, nav li a:visited {
 nav.sidebar li a, nav.sidebar li a:visited {
 	color: #D4D9DC;
 }
-nav li.menu-item-15 a {
+nav li.menu-item-14 a {
 	border-bottom: 8px solid #e9eced;
 	padding: 0 10px 29px 10px;
 }
-nav.sidebar li.menu-item-15 a {
-	border-bottom: 0;
-	padding: 0;
-}
-nav li.menu-item-20 a {
-	border-bottom: 8px solid #d4d9dc;
-	padding: 0 10px 29px 10px;
-}
-nav.sidebar li.menu-item-20 a {
+nav.sidebar li.menu-item-14 a {
 	border-bottom: 0;
 	padding: 0;
 }
 nav li.menu-item-19 a {
-	border-bottom: 8px solid #bec5cb;
+	border-bottom: 8px solid #d4d9dc;
 	padding: 0 10px 29px 10px;
 }
 nav.sidebar li.menu-item-19 a {
@@ -62,7 +54,7 @@ nav.sidebar li.menu-item-19 a {
 	padding: 0;
 }
 nav li.menu-item-18 a {
-	border-bottom: 8px solid #a9b3ba;
+	border-bottom: 8px solid #bec5cb;
 	padding: 0 10px 29px 10px;
 }
 nav.sidebar li.menu-item-18 a {
@@ -70,42 +62,50 @@ nav.sidebar li.menu-item-18 a {
 	padding: 0;
 }
 nav li.menu-item-17 a {
-	border-bottom: 8px solid #949fa8;
+	border-bottom: 8px solid #a9b3ba;
 	padding: 0 10px 29px 10px;
 }
 nav.sidebar li.menu-item-17 a {
 	border-bottom: 0;
 	padding: 0;
-	margin-right: 75px;
 }
 nav li.menu-item-16 a {
-	border-bottom: 8px solid #7d8892;
+	border-bottom: 8px solid #949fa8;
 	padding: 0 10px 29px 10px;
 }
 nav.sidebar li.menu-item-16 a {
 	border-bottom: 0;
 	padding: 0;
+	margin-right: 75px;
+}
+nav li.menu-item-15 a {
+	border-bottom: 8px solid #7d8892;
+	padding: 0 10px 29px 10px;
+}
+nav.sidebar li.menu-item-15 a {
+	border-bottom: 0;
+	padding: 0;
 	margin-right: 130px;
 }
-nav li.menu-item-44 a {
+nav li.menu-item-39 a {
 	border-bottom: 8px solid #58595B;
 	padding: 0 10px 29px 10px;
 }
-nav.sidebar li.menu-item-44 a {
+nav.sidebar li.menu-item-39 a {
 	border-bottom: 0;
 	padding: 0;
 }
 .sub-menu {
 	position: absolute;
-    display: none; 
+	display: none; 
 }
 #menu-menu-1 {
 	position: relative;
 }
 #menu-menu-1 li .sub-menu {
 	top: 55px;
-    right: 0;
-    padding-left: 0;
+	right: 0;
+	padding-left: 0;
 }
 #menu-menu-1 li .sub-menu li{
 	padding: 15px;
@@ -113,24 +113,24 @@ nav.sidebar li.menu-item-44 a {
 #menu-menu-1 li .sub-menu li a{
 	padding: 15px;
 }
-nav li.menu-item-44:hover .sub-menu {
+nav li.menu-item-39:hover .sub-menu {
 	display:block;
-    background-color: #58595B;
-    z-index: 99;
+	background-color: #58595B;
+	z-index: 99;
 }
-nav.sidebar li.menu-item-44:hover .sub-menu {
+nav.sidebar li.menu-item-39:hover .sub-menu {
 	display: block;
 	margin-top: -4px;
 	background-color: transparent;
 	padding-left: 25px;
 }
-nav li.menu-item-44 .sub-menu a {
+nav li.menu-item-39 .sub-menu a {
 	border-bottom: 0;
 	color: #fff;
 	padding: 0 ;
 }
-nav li.menu-item-44 .sub-menu a:hover, 
-nav li.menu-item-44 .sub-menu a:active {
+nav li.menu-item-39 .sub-menu a:hover, 
+nav li.menu-item-39 .sub-menu a:active {
 	border-bottom: 0;
 	padding: 0 ;
 }
@@ -206,9 +206,9 @@ nav.sidebar li.menu-itens a:active {
 }
 .text-banner-home {
 	width: 340px;
-    position: absolute;
-    top: 100px;
-    font-size: 1.4em;
+	position: absolute;
+	top: 100px;
+	font-size: 1.4em;
 }
 .banner-home img {
 	width: 100%;
@@ -224,7 +224,7 @@ section h2 {
 section h4 {
 	text-transform: uppercase;
 	margin-top: 15px;
-    padding-top: 15px;
+	padding-top: 15px;
 }
 .wrap {
 	height: auto;
@@ -273,17 +273,17 @@ section h4 {
 	right: 15px;
 	bottom: 15px;
 	color: #fff;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .two {
 	background-color: #a9b3ba;
 }
 .two a {
-    position: absolute;
+	position: absolute;
 	right: 15px;
 	bottom: 15px;
-    color: #fff;
-    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 .three {
 	background-color: #7f8c97;
@@ -292,8 +292,8 @@ section h4 {
 	position: absolute;
 	right: 15px;
 	bottom: 15px;
-    color: #fff;
-    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 .four {
 	background-color: #426376;
@@ -302,17 +302,17 @@ section h4 {
 	position: absolute;
 	right: 15px;
 	bottom: 15px;
-    color: #fff;
-    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 .caption img {
-    vertical-align: top;
-    margin-top: 20px;
+	vertical-align: top;
+	margin-top: 20px;
 }
 .caption h3 {
 	display: inline-block;
 	margin-top: 0px;
-    margin-left: 5px;
+	margin-left: 5px;
 }
 .one h3, .four h3 {
 	margin-top: 15px;
@@ -324,20 +324,25 @@ section h4 {
 	margin-top: 9px;
 }
 .btn-default {
-    color: #333;
-    background-color: transparent;
-    border-color: #fff;
-    margin: 5px;
+	color: #333;
+	background-color: transparent;
+	border-color: #fff;
+	margin: 5px;
 }
 .btn {
 	border-radius: 0px;
 }
 .btn-leia {
 	position: absolute;
-    bottom: 5px;
-    right: 5px;
+	bottom: 5px;
+	right: 5px;
 	margin: 5px 5px 5px 420px;
 	border: 1px solid !important;
+}
+.btn-padrao {
+	background-color: #721326;
+	border-color: transparent;
+	color: #fff;
 }
 .first_column .child p a {
 	right: 20px;
@@ -349,10 +354,10 @@ section h4 {
 }
 .text-banner-aempresa {
 	width: 220px;
-    position: absolute;
-    top: 140px;
-    font-size: 1.4em;
-    color: #fff;
+	position: absolute;
+	top: 140px;
+	font-size: 1.4em;
+	color: #fff;
 }
 .banner-aempresa img {
 	width: 100%;
@@ -367,33 +372,13 @@ section h4 {
 .aempresa-box p {
 	margin: 0 0 40px;
 }
+.first-text-box {
+	font-size: 20px;
+}
 .aempresa-box h5 {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-/*AREA RESTRITA*/
-.arearestrita-download {
-	background-color: #e9eced;
-	padding: 15px;
-}
-.arearestrita-webmail {
-	background-color: #e4ecf6;
-	margin-bottom: 100px;
-	padding: 15px 15px 50px;
- }
- .arearestrita-download h3, .arearestrita-webmail h3 {
-	margin-left: 10%;
- }
- .arearestrita-webmail-box {
- 	text-align: center;
- }
- .arearestrita-webmail-box img, .arearestrita-webmail-box h3 {
- 	display: inline-block;
- }
- .arearestrita-webmail-box img {
- 	margin-right: 20%;
- 	width: 20%;
- }
 /*SERVIÇOS*/
 .banner-servicos img {
 	width: 100%;
@@ -407,16 +392,16 @@ section h4 {
 	font-weight: bold;
 }
 .panel-group {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 .panel-title {
-    font-size: 20px;
-    position: relative;
-    color: #1e4660;
+	font-size: 20px;
+	position: relative;
+	color: #1e4660;
 }
 .panel-title img {
-    width: 6%;
-    margin-right: 20px;
+	width: 6%;
+	margin-right: 20px;
 }
 .panel-heading a:hover, .panel-heading a:focus {
 	text-decoration: none;
@@ -427,14 +412,14 @@ section h4 {
 	right: 10px;
 }
 .panel {
-     background-color: transparent; 
-     border: 0 transparent; 
-     -webkit-box-shadow: none;
-     box-shadow: none;
+	background-color: transparent; 
+	border: 0 transparent; 
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 .panel-default > .panel-heading {
-    background-color: transparent;
-    border-color: transparent;
+	background-color: transparent;
+	border-color: transparent;
 }
 /*TREINAMENTOS*/
 .banner-treinamentos img {
@@ -453,18 +438,18 @@ section h4 {
 }
 .treinamento-text p {
 	width: 22%;
-    float: left;
-    margin-top: 80px;
-    margin-left: 200px;
-    font-size: 16px;
+	float: left;
+	margin-top: 80px;
+	margin-left: 200px;
+	font-size: 16px;
 }
 .treinamento-text img {
 	margin-top: 50px;
-    margin-left: 70px;
+	margin-left: 70px;
 }
 .form-treinamento {
-    margin: 90px 0;
-    position: relative;
+	margin: 90px 0;
+	position: relative;
 }
 .form-treinamento input {
 	display: inline;
@@ -473,16 +458,30 @@ section h4 {
 	position: absolute;
 	right: 78px;
 }
-.btn-treinamento {
-	margin: 0;
-    background-color: #721326;
-    border-color: transparent;
-    color: #fff;
-}
 /*CLIENTES*/
 .banner-clientes img {
 	width: 100%;
 	min-height: 180px;
+}
+.clientes {
+	background-color: #e9eced;
+}
+.clientes section:first-child {
+	margin-top: 30px;
+}
+.clientes section div img {
+	margin-top: 10px;
+}
+.clientes-descricao h4,
+.clientes-descricao ul li {
+	color: #1e4660;
+}
+.clientes-descricao h4 {
+	font-size: 18px;
+    font-weight: 700;
+}
+.clientes-lista {
+	padding-left: 15px;
 }
 /*CONTATO*/
 .banner-contato > img:nth-child(1) {
@@ -494,9 +493,9 @@ section h4 {
 }
 .box-banner-contato {
 	width: 380px;
-    position: absolute;
-    top: 40px;
-    text-align: center;
+	position: absolute;
+	top: 40px;
+	text-align: center;
 }
 .text-banner-contato {
 	color: #fff;
@@ -517,30 +516,55 @@ form {
 	border-radius: 0;
 }
 .btn-from {
-	color: #fff;
-    background-color: #721326;
-    border-color: transparent;
-    position: absolute;
-    right: 11px;
-    bottom: -35px;
+	position: absolute;
+	right: 11px;
+	bottom: -35px;
 }
 .alert {
 	margin-top: 20px;
 	padding: 45px;
-    border-radius: 0;
+	border-radius: 0;
 }
 .alert-success {
 	color: #fff;
-    background-color: #294052;
-    border-color: #294052;
+	background-color: #294052;
+	border-color: #294052;
 }
 .alert-success .alert-link {
-    color: #fff;
-    font-size: 25px;
+	color: #fff;
+	font-size: 25px;
 }
 #map-canvas {
 	width: 92,5%;
 	height: 500px;
+}
+/*AREA RESTRITA*/
+.arearestrita-download {
+	background-color: #e9eced;
+	padding: 15px;
+}
+.espaco-btn {
+	margin-bottom: 39px;
+}
+.arearestrita-webmail {
+	background-color: #e4ecf6;
+	padding: 15px 15px 50px;
+}
+.arearestrita-download h3, .arearestrita-webmail h3 {
+	margin-left: 10%;
+}
+.arearestrita-webmail-box {
+	text-align: center;
+}
+.arearestrita-webmail-box img, .arearestrita-webmail-box p {
+	display: inline-block;
+}
+.arearestrita-webmail-box p {
+	font-size: 22px;
+}
+.arearestrita-webmail-box img {
+	margin-right: 20%;
+	width: 20%;
 }
 /*FOOTER*/
 footer {
@@ -553,7 +577,7 @@ footer .container {
 }
 .footer-barra {
 	height: 7px;
-    background-color: #929290;
+	background-color: #929290;
 }
 .logo-footer {
 	height: 75px;
@@ -564,7 +588,7 @@ footer p {
 	color: #fff;
 }
 .menu_footer .menu-menu-container {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 .menu_footer li {
 	list-style: none;
@@ -633,53 +657,53 @@ footer p {
 /*PAGINATION*/
 .custom-pagination span,
 .custom-pagination a {
-  display: inline-block;
-  padding: 2px 10px;
+	display: inline-block;
+	padding: 2px 10px;
 }
 .custom-pagination a {
-  background-color: #ebebeb;
-  color: #294052;
+	background-color: #ebebeb;
+	color: #294052;
 }
 .custom-pagination a:hover {
-  background-color: #294052;
-  color: #fff;
+	background-color: #294052;
+	color: #fff;
 }
 .custom-pagination span.page-num {
-  margin-right: 10px;
-  padding: 0;
+	margin-right: 10px;
+	padding: 0;
 }
 .custom-pagination span.dots {
-  padding: 0;
-  color: gainsboro;
+	padding: 0;
+	color: gainsboro;
 }
 .custom-pagination span.current {
-  background-color: #294052;
-  color: #fff;
+	background-color: #294052;
+	color: #fff;
 }
 /*MEDIAQUERIES*/
 @media screen and (max-width: 1199px) {
 	/*INDEX*/
 	.text-banner-home {
-    	top: 50px;
-    	font-size: 1.1em;
-    }
-    .thumbnail {
-    	height: 400px;
-    }
-    .caption h3 {
-    	font-size: 21px;
-    }
-    /*EMPRESA*/
-    .text-banner-aempresa {
-    	top: 50px;
-    	font-size: 1.2em;
+		top: 50px;
+		font-size: 1.1em;
 	}
-	/*TREINAMENTO*/
-    .treinamento-text img {
-    	margin-top: 90px;
-    }
-    .form-treinamento-btn {
-    	right: 17px;
+	.thumbnail {
+		height: 400px;
+	}
+	.caption h3 {
+		font-size: 21px;
+	}
+	/*EMPRESA*/
+	.text-banner-aempresa {
+		top: 50px;
+		font-size: 1.2em;
+	}
+	/*TREINAMENTOS*/
+	.treinamento-text img {
+		margin-top: 90px;
+	}
+	.form-treinamento-btn {
+		right: 17px;
 	}
 	/*CONTATO*/
 	.box-banner-contato {
@@ -690,24 +714,24 @@ footer p {
 		padding: 10px;
 	}
 	.first_column .child p a {
-    	bottom: -41px;
+		bottom: -41px;
 	}
 }
 @media screen and (max-width: 991px) {
 	/*INDEX*/
 	.thumbnail {
-    	height: 340px;
+		height: 340px;
 	}
-	/*TREINAMENTO*/
+	/*TREINAMENTOS*/
 	.treinamento-text p {
-    	width: 42%;
-    	margin-left: 20px;
+		width: 42%;
+		margin-left: 20px;
 	}	
 	.treinamento-text img {
-    	margin-top: 50px;
-    }
+		margin-top: 50px;
+	}
 	.form-treinamento-btn {
-    	right: 0;
+		right: 0;
 	}
 	/*FOOTER*/
 	footer {
@@ -720,64 +744,94 @@ footer p {
 		display: none;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	/*CLIENTES*/
+		.clientes-descricao {
+			margin-left: 57px;
+		}
+}
 @media screen and (max-width: 767px){
 	/*INDEX*/
-	 .last-info .col-md-6, .col-md-12 {
+	.last-info .col-md-6, .col-md-12 {
 		padding-right: 0;
 		padding-left: 0;
 	}
-	/*TREINAMENTO*/
+	/*TREINAMENTOS*/
 	.treinamento-box {
-    	padding: 40px 0px;
+		padding: 40px 0px;
 	}
 	.titulo-treinamento img {
 		width: 20%;
-    	margin-right: 30px;
+		margin-right: 30px;
 	}
 	.treinamento-text p {
-    	width: 92%;
-    }
+		width: 92%;
+	}
 }
 @media screen and (max-width: 420px) {
 	/*INDEX*/
-    .text-banner-home {
-    	width: 200px;
-    	top: 30px;
-    	font-size: 0.9em;
-    }
-    .first_column {
-    	height: 450px;
+	.text-banner-home {
+		width: 200px;
+		top: 30px;
+		font-size: 0.9em;
 	}
-    .img-first-column {
-    	height: 150px;
+	.first_column {
+		height: 450px;
+	}
+	.img-first-column {
+		height: 150px;
 	}
 	.second_column {
-    	height: 680px;
-    }
-    .children_column {
-    	height: 355px;
-    }
-    .box-second-column {
+		height: 680px;
+	}
+	.children_column {
+		height: 355px;
+	}
+	.box-second-column {
 		min-height: 260px; 
 	}
 	/*EMPRESA*/
 	.aempresa-box {
-    	padding: 15px 15px;
+		padding: 15px 15px;
 	}
 	/*SERVICOS*/
 	.servicos-box {
-    	padding: 15px 15px;
+		padding: 15px 15px;
 	}
 	.panel-title i {
-    	top: 1px;
-    	right: 0px;
+		top: 1px;
+		right: 0px;
 	}
+	/*TREINAMENTOS*/
+	.titulo-treinamento img {
+    	margin-right: 15px;
+    }
+    .treinamento-text p {
+    	margin-top: 30px;
+    }
+    .treinamento-text img {
+    	margin-top: 30px;
+    	margin-left: 30px;
+    }
+    .form-treinamento {
+    	margin: 40px 0;
+    }
 	/*CONTATO*/
 	.box-banner-contato {
-    	width: 200px;
-    }
-    /*FOOTER*/
-    .logo-footer {
-    	width: 100%;
-    }
+		width: 200px;
+	}
+	/*AREA RESTRITA*/
+	.arearestrita-webmail-box p {
+		font-size: 20px;
+	}
+	input[type="file"] {
+    font-size: 11px;
+	}
+	/*FOOTER*/
+	.logo-footer {
+		width: 100%;
+	}
+	footer .container {
+		padding: 14px;
+	}
 }

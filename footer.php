@@ -15,8 +15,9 @@
 			<p class="endereco">Av. Imperatriz Leopoldina, 454 - Sala 33</p>
 			<p>CEP 09770-272 - B. Nova Petrópolis - S.B.C</p>
 			<p>Fone (11) 4330 4442 | 3423 1361</p>
-			<a class="footer-link" href="contato@rcconsulting.eng.br">contato@rcconsulting.eng.br</a>
+			
 		</div>
+		<a class="footer-link" href="contato@rcconsulting.eng.br">contato@rcconsulting.eng.br</a>
 	</div>
 </footer>
 
@@ -25,8 +26,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory');?>/js/rc_theme.js"></script>
-<!-- Não abrir link no menu -->
-<script type="text/javascript">jQuery(function($) {$("li#menu-item-44").children("a").attr('href', "#");});</script>
 
 <?php wp_footer(); ?>
 

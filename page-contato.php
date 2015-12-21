@@ -67,7 +67,7 @@ get_header(); ?>
 				<textarea class="form-control" rows="3" name="your_message" id="your_message"><?php echo stripslashes($_POST[your_message]); ?></textarea>
 				<label for="mensagem">MENSAGEM</label>
 			</div>
-			<button type="submit" class="btn btn-default btn-from"><i class="fa fa-paper-plane-o"></i> ENVIAR </button>
+			<button type="submit" class="btn btn-default btn-padrao btn-from"><i class="fa fa-paper-plane-o"></i> ENVIAR </button>
 		</div>
 	</form>
 

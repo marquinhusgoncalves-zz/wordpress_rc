@@ -7,7 +7,7 @@
 	<div class="col-sm-12 arearestrita-download">
 		<h3>Área para Downloads e Uploads</h3>
 		<div class="col-md-6">
-			<form method="post" action="/sites/rc/download.php" >
+			<form method="post" action="/download.php" >
 				<fieldset>
 					<legend>Download</legend>
 					<div class="form-group">
@@ -22,22 +22,22 @@
 						<label for="code">Código</label>
 						<input type="text" name="code" id="code" size="15" tabindex="4">
 					</div>
-					<button type="reset" class="btn btn-default">Limpar</button>
-					<button type="submit" class="btn btn-default">Download</button>
+					<button type="reset" class="btn btn-default btn-padrao">Limpar</button>
+					<button type="submit" class="btn btn-default btn-padrao">Download</button>
 
 				</fieldset>
 			</form>
 		</div>
 		<div class="col-md-6">
-			<form method="post" action="/sites/rc/upload.php" enctype="multipart/form-data">
+			<form method="post" action="/upload.php" enctype="multipart/form-data">
 				<fieldset>
 					<legend>Upload</legend>
-					<div class="form-group">
+					<div class="form-group espaco-btn">
 						<label for="arquivo">Selecione o arquivo</label>
 						<input name="arquivo" type="file" id="arquivo">
 					</div>
-					<button type="reset" class="btn btn-default">Limpar</button>
-					<button type="submit" class="btn btn-default">Enviar</button>
+					<button type="reset" class="btn btn-default btn-padrao">Limpar</button>
+					<button type="submit" class="btn btn-default btn-padrao">Enviar</button>
 				</fieldset>
 			</form>
 		</div>
@@ -46,7 +46,7 @@
 		<h3>WebMail</h3>
 		<div class="arearestrita-webmail-box">
 			<img src="<?php bloginfo('stylesheet_directory');?>/img/logo-webmail.png" alt="Logo WebMail">
-			<h3>webmail.rcconsulting.com.br</h3>
+			<a href="http://webmail.rcconsulting.eng.br" target="_blank"><p>webmail.rcconsulting.eng.br</p></a>
 		</div>
 	</div>
 </div>

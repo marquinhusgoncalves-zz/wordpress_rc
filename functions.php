@@ -43,16 +43,10 @@ function catch_that_image() {
     $first_img = $matches[1][0];
   
     if(empty($first_img)) {
-      $first_img = "/img/default.jpg";
+      $first_img = "http://rcconsulting.eng.br/wp-content/themes/rc_theme/img/logo.png";
     }
     return $first_img;
   }
-
-// Texto admin rodape
-function remove_footer_admin () {
-    echo "Feito com o <3 por Mundo S.A";
-}
-add_filter('admin_footer_text', 'remove_footer_admin');
 
 //Pagination
 function pagination($numpages = '', $pagerange = '', $paged='') {
@@ -100,4 +94,33 @@ function pagination($numpages = '', $pagerange = '', $paged='') {
 
 }
 
+// Logo Admin
+  function my_login_logo() { ?>
+  <style type="text/css">
+    .login h1 a {
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png);
+        background-size: 260px auto;
+        width: 320px;
+    }
+</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// Link Logo
+function meu_wp_login_url() {
+    return get_bloginfo('url');
+}
+add_filter('login_headerurl', 'meu_wp_login_url');
+
+// Logo Title
+function meu_wp_login_title() {
+    return get_bloginfo('name');
+}
+add_filter('login_headertitle', 'meu_wp_login_title');
+
+// Texto admin rodape
+function remove_footer_admin () {
+    echo "Feito com o <3 por Mundo S.A";
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
 ?>

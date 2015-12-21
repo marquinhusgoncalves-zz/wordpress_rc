@@ -1,5 +1,9 @@
+$(function() {
+	$("li.menu-item-44").children("a").attr('href', "#");
+});
+
 $(function(){
-$(document).on( 'scroll', function(){        
+	$(document).on( 'scroll', function(){        
 		if ($(window).scrollTop() > 100) {
 			$('.scroll-to-top').addClass('show');
 		} else {
@@ -19,15 +23,15 @@ function scrollToTop() {
 <!-- Transform icon toggle -->
 $(document).ready(
 	function() {
-	$(".toggle i").click(function() {
-		 var $this = $(this);
-		 if ($this.hasClass("fa-bars")) {
+		$(".toggle i").click(function() {
+			var $this = $(this);
+			if ($this.hasClass("fa-bars")) {
 				$this.removeClass("fa-bars").addClass("fa-times");
 				return;
-		 }
-		 if ($this.hasClass("fa-times")) {
+			}
+			if ($this.hasClass("fa-times")) {
 				$this.removeClass("fa-times").addClass("fa-bars");
 				return;
-			 }
+			}
 		});
 	});
